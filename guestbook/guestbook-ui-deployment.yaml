@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: IfNotPresent
         command: [sleep]
         args:
-          - "30"
+          - "10"
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: guestbook-ui

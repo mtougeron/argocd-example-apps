@@ -4,7 +4,6 @@ metadata:
   name: pre-sync-hook
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookFailed
 spec:
   template:
     spec:
@@ -13,6 +12,6 @@ spec:
         image: mtougeron/touge-debug
         command: [sleep]
         args:
-          - "60"
+          - "15"
       restartPolicy: Never
   backoffLimit: 10
