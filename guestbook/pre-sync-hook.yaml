@@ -12,6 +12,6 @@ spec:
         image: mtougeron/touge-debug
         command: [sleep]
         args:
-          - "15"
+          - "10"
       restartPolicy: Never
   backoffLimit: 10
